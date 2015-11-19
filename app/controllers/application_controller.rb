@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   #auth stuff
     
 
-   def is_authenticated?
+  def is_authenticated?
     unless current_user
       flash[:danger] = "Credentials Invalid!!"
       redirect_to login_path
