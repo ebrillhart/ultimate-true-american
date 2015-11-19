@@ -11,9 +11,9 @@ Rails.application.routes.draw do
   get 'profile' => 'users#show'
 
   # auth controller
-  get 'auth/logout' => 'auth#logout'
-  get 'auth/failure' => 'auth#failure'
-  get 'auth/:provider/callback' => 'auth#callback'
+  get 'auth/logout' => 'fbookauth#logout'
+  get 'auth/failure' => 'fbookauth#failure'
+  get 'auth/:provider/callback' => 'fbookauth#callback'
 
   # sessions controller
   get 'login' => 'sessions#new'
