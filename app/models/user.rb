@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
 	has_many :game
 
 	# checks for a password
-  	 validates :password,
+  validates :password,
     presence: true,
     length: {
     minimum: 8,
