@@ -1,3 +1,15 @@
 <!-- form that allows user/game creator to add game title, optional description, # of players, and user names of up to 10 players -->
-<h1>Game#new</h1>
-<p>Find me in app/views/game/new.html.erb</p>
+<div class="row">
+	<div class="col-xs-8 col-xs-offset-2">
+		<h1 class="text-center" id="newGameHeader">Create a New Game</h1>
+	</div>	
+</div>
+<div class="row">
+	<%= bootstrap_form_for @game, url: game_path do |f| %>
+	  	<%= f.text_field :title %>
+	  	<%= f.text_field :description %>
+	  	<%= f.text_field :no_of_players %>
+
+	  	<%= f.primary %>
+	<% end %>	
+</div>
