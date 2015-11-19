@@ -1,14 +1,14 @@
 class GameController < ApplicationController
   def index
     # join game page where players add aliases, random number generator for teams, start game button
-    @game = Game.find(params[:id])
-
+    # @game = Game.find(params[:id])
+    @games = Game.all 
   end
 
   def create
     # creates the game/adds to database, no view
-    Game.create game_params
-    redirect_to players_path
+    game = Game.create game_params
+    redirect_to game_index_path
   end
 
   def new

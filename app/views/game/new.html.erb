@@ -6,7 +6,7 @@
 		</div>	
 	</div>
 	<div class="row">
-		<%= bootstrap_form_for @game, url: players_path do |f| %>
+		<%= bootstrap_form_for @game, url: game_index_path do |f| %>
 		  	<%= f.text_field :title %>
 		  	<%= f.text_field :description %>
 
