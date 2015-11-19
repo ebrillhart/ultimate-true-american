@@ -20,22 +20,6 @@ Rails.application.routes.draw do
   post 'login' => 'sessions#create'
   get 'logout' => 'sessions#destroy'
 
-  # game controller
-  get 'game/index'
-  get 'game/create'
-  get 'game/new'
-  get 'game/edit'
-  get 'game/show'
-  get 'game/update'
-  get 'game/destroy'
-
-  # players controller
-  get 'players/create'
-  get 'players/new'
-  get 'players/edit'
-  get 'players/update'
-  get 'players/destroy'
-
   # turns options
   get 'turn/index'
   get 'thecount/show'

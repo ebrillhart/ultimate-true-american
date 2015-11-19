@@ -2,5 +2,12 @@
 <!-- has random number generator option for teams -->
 <!-- start game button that takes user to game/show and starts game -->
 <div class="container">
+
+	<% @games.each do |game| %>
+<div class="well">
+  <h2><%= game.title %></h2>
+  <p><%= game.description %></p>
+</div>
+<% end %>
 	
 </div>
