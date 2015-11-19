@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151119003323) do
+ActiveRecord::Schema.define(version: 20151119201256) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,23 +41,16 @@ ActiveRecord::Schema.define(version: 20151119003323) do
 
   add_index "games", ["user_id"], name: "index_games_on_user_id", using: :btree
 
-  create_table "games_players", force: :cascade do |t|
-    t.integer  "game_id"
-    t.integer  "player_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  add_index "games_players", ["game_id"], name: "index_games_players_on_game_id", using: :btree
-  add_index "games_players", ["player_id"], name: "index_games_players_on_player_id", using: :btree
-
   create_table "players", force: :cascade do |t|
     t.string   "username"
     t.string   "alias"
-    t.integer  "beers"
+    t.string   "beers"
+    t.integer  "game_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  add_index "players", ["game_id"], name: "index_players_on_game_id", using: :btree
 
   create_table "quotes", force: :cascade do |t|
     t.string   "first_half"
@@ -75,6 +68,5 @@ ActiveRecord::Schema.define(version: 20151119003323) do
   end
 
   add_foreign_key "games", "users"
-  add_foreign_key "games_players", "games"
-  add_foreign_key "games_players", "players"
+  add_foreign_key "players", "games"
 end
