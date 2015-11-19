@@ -1,0 +1,2 @@
+module CommonalityHelper
+end
