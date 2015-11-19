@@ -1,0 +1,10 @@
+<h1>Signup</h1>
+
+<%= bootstrap_form_for :user do |f| %>
+  <%= f.email_field :email %>
+  <%= f.text_field :name %>
+  <%= f.password_field :password %>
+  <%= f.password_field :password_confirmation %>
+
+  <%= f.primary 'Signup' %>
+<% end %>
