@@ -1,7 +1,7 @@
 class PlayersController < ApplicationController
   # def index
   # end
-
+  before_action :current_user
   def create
     # same view as create game view, allows user to add player usernames to game
   end

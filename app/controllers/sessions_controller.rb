@@ -11,16 +11,20 @@ class SessionsController < ApplicationController
     if user
    
       session[:user_id] = user.id
-      flash[:success] = "#{user.email} has logged in!"
-      redirect_to login_path
+      redirect_to profile_path
     else
    
-      flash[:danger] = 'You had the wrong email/password'
-      redirect_to login_path
+      
+      redirect_to root_path
     end
 end
-end
 
+def destroy
+  sessions[user_id] = nil
+  redirect_to root_path
+
+end
+end
 
 private
 

@@ -4,11 +4,11 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   #auth stuff
-    before_action :current_user
+    
 
    def is_authenticated?
     unless current_user
-      # flash[:danger] = "Credentials Invalid!!"
+      flash[:danger] = "Credentials Invalid!!"
       redirect_to login_path
     end
   end
