@@ -1,13 +1,14 @@
 class GameController < ApplicationController
   def index
     # join game page where players add aliases, random number generator for teams, start game button
-    @games = Game.all
+    @game = Game.find(params[:id])
+
   end
 
   def create
     # creates the game/adds to database, no view
     Game.create game_params
-    redirect_to game_path
+    redirect_to players_path
   end
 
   def new
@@ -28,7 +29,7 @@ class GameController < ApplicationController
   def destroy
     # allows game to be deleted
     Game.find(params[:id]).delete
-    redirect_to game_path
+    redirect_to profile_path
   end
 
   private
