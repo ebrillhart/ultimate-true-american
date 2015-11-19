@@ -41,25 +41,23 @@
                 <h4 class="modal-title">Sign Up</h4>
               </div>
               <div class="modal-body">
-                <!-- # render 'partials/signup' -->
-                <p>Sign-up form will render when back-end auth has been set up. For form code reference, see partials folder.</p>
+                <%= render 'partials/signup' %>
               </div>
             </div><!-- /.modal-content -->
           </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
         <!-- sign-in trigger -->
-        <li><a data-toggle="modal" href="#signinModal">Sign In</a></li>
+        <li><a data-toggle="modal" href="#signinModal">Log In</a></li>
         <!-- sign-in modal -->
         <div class="modal fade" id="signinModal">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Sign Up</h4>
+                <h4 class="modal-title">Log In</h4>
               </div>
               <div class="modal-body">
-                <!-- # render 'partials/signin' -->
-                <p>Sign-in form will render when back-end auth has been set up. For form code reference, see partials folder.</p>
+                <%= render 'partials/signin' %>
               </div>
             </div><!-- /.modal-content -->
           </div><!-- /.modal-dialog -->
