@@ -9,8 +9,15 @@ class User < ActiveRecord::Base
 	has_many :game
 
 	# checks for a password
-  	validates_presence_of :password, on: :create
-
+  	 validates :password,
+    presence: true,
+    length: {
+    minimum: 8,
+    maximum: 99,
+    too_short: "must be greater than %{count} characters",
+    too_long: "must be less than %{count} characters"
+  },
+  confirmation: true
   	# calls bcrypt
   	has_secure_password
   	
