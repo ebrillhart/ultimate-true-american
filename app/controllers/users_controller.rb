@@ -7,13 +7,14 @@ class UsersController < ApplicationController
   def create
   	# method to create new user
   	User.create user_params
-  end
+    flash[:success] = "#{user.email} has logged in!"
 
   def show
   	# user profile page with option to create or join game and view past games participated in
   end
+end
   private
 	def user_params
-		params.require(:user).permit(:name, :email, :password)
+		params.require(:user).permit(:username, :email, :password)
 	end
 end

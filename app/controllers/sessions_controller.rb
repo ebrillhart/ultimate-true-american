@@ -19,8 +19,13 @@ class SessionsController < ApplicationController
       redirect_to login_path
     end
 end
-end
 
+def destroy
+  sessions[user_id] = nil
+  redirect_to root_path
+
+end
+end
 
 private
 
