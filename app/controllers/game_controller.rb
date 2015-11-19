@@ -7,7 +7,7 @@ class GameController < ApplicationController
   def create
     # creates the game/adds to database, no view
     Game.create game_params
-    redirect_to games_path
+    redirect_to game_path
   end
 
   def new
@@ -28,6 +28,12 @@ class GameController < ApplicationController
   def destroy
     # allows game to be deleted
     Game.find(params[:id]).delete
-    redirect_to games_path
+    redirect_to game_path
+  end
+
+  private
+
+  def game_params
+    params.require(:game).permit(:title, :description, :no_of_players)
   end
 end

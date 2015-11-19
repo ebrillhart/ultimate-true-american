@@ -7,7 +7,8 @@
 <div class="row">
 	<!-- button to create new game (hidden if user has been invited to join game) -->
 	<div class="col-xs-8 col-xs-offset-2">
-		<a class="btn btn-default center-block" href="/game/new" role="button" id="newGameBtn">Create a New Game</a>
+		<!-- <a class="btn btn-default center-block" href="/game/new" role="button" id="newGameBtn">Create a New Game</a> -->
+		<%= link_to 'Create a New Game', new_game_path, class: 'btn btn-default center-block', id: 'newGameBtn' %>
 	</div>
 	<!-- button to join game (only visible if user has been added to a game) -->
 	<div class="col-xs-8 col-xs-offset-2">
