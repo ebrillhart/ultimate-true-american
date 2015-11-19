@@ -1,3 +1,40 @@
 <!-- user profile with create game option and join game option if they've been added and a list of the past games they've created or participated in -->
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<div class="row">
+	<div class="col-xs-8 col-xs-offset-2">
+		<h1 class="text-center" id="profileHeader">Hi, @username!</h1>
+	</div>	
+</div>
+<div class="row">
+	<!-- button to create new game (hidden if user has been invited to join game) -->
+	<div class="col-xs-8 col-xs-offset-2">
+		<a class="btn btn-default center-block" href="/game/new" role="button" id="newGameBtn">Create a New Game</a>
+	</div>
+	<!-- button to join game (only visible if user has been added to a game) -->
+	<div class="col-xs-8 col-xs-offset-2">
+		<a class="btn btn-default center-block" href="/game/new" role="button" id="newGameBtn">Join @NameOfGame</a>
+	</div>
+</div>
+<!-- past games view for games player has participated in -->
+<div class="row">
+	<div class="col-xs-8 col-xs-offset-2">
+		<h2 class="text-center" id="pastGames">Past Games</h2>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12">
+		<h2 class="text-left" id="asCreator">As Creator</h2>
+	</div>
+</div>
+<div class="row">
+	<!-- past games as creator will go here -->
+</div>
+<div class="row">
+	<div class="col-xs-12">
+		<h2 class="text-left" id="asPlayer">As Player</h2>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12">
+		<!-- past games as player will go here -->
+	</div>
+</div>
