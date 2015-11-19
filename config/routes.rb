@@ -10,6 +10,11 @@ Rails.application.routes.draw do
   post 'signup' => 'users#create'
   get 'profile' => 'users#show'
 
+  # auth controller
+  get 'auth/logout' => 'auth#logout'
+  get 'auth/failure' => 'auth#failure'
+  get 'auth/:provider/callback' => 'auth#callback'
+
   # sessions controller
   get 'login' => 'sessions#new'
   post 'login' => 'sessions#create'
