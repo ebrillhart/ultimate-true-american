@@ -32,6 +32,15 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
+        <!-- view about page (viewable by all) -->
+        <li><a href="/about">About</a></li>
+        <!-- view game rules (viewable by all) -->
+        <li><a href="/rules">View Rules</a></li>
+        <!-- log out trigger -->
+        <% if @current_user %>
+        <li><a href="/profile"><%= @current_user %></a></li>
+        <li><a href="/logout">Log Out</a></li>
+        <% else %>
         <!-- sign up trigger -->
         <li><a data-toggle="modal" href="#signupModal">Sign Up</a></li>
         <!-- sign up modal -->
@@ -64,22 +73,19 @@
             </div><!-- /.modal-content -->
           </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
-        <!-- log out trigger -->
-        <li><a href="/logout">Log Out</a></li>
-        <!-- view about page (viewable by all) -->
-        <li><a href="/about">About</a></li>
-        <!-- view game rules (viewable by all) -->
-        <li><a href="/rules">View Rules</a></li>
+        <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 
-	<div class="container">
+	<%= yield %>
 
-		<%= yield %>
-
-	</div>
+<div class-"container hidden-xs hidden-sm" id="copyrightDiv">
+  <div class="row">
+    <h6 id="copyright">&copy; Copyright 2015 YET Group. All rights reserved.</h6> 
+  </div>
+</div> 
 
 </body>
 </html>
