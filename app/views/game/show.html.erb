@@ -23,9 +23,11 @@
             <%= bootstrap_form_for :player, url: "/players" do |f| %>
   				<%= f.text_field :username %>
           <%= hidden_field_tag(:game_id,@game.id) %>
+            <%= bootstrap_form_for :player, url: game_path do |f| %>
+  				    <%= f.text_field :username %>
 
-  				<%= f.primary 'Add Player' %>
-			<% end %>
+  				  <%= f.primary 'Add Player' %>
+			     <% end %>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
