@@ -22,6 +22,9 @@ before_action :is_authenticated?
 
   def update
      # when users change their alias on the join game page (game index)
+     
+
+
   end
 
   def destroy

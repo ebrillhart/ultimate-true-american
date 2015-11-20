@@ -17,7 +17,7 @@ class UsersController < ApplicationController
     end
   def show
   	# user profile page with option to create or join game and view past games participated in
-    @games_played = 
+    @ = 
   end
 end
   private
