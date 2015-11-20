@@ -65,9 +65,21 @@
          background-color: #3BB1F7;
          color: white;
      }
-     /*******************/
-     /* Partials Styling*/
-     /*******************/
+     /******************/
+     /* Game Dashboard */
+     /******************/
+     #gameTitle, #playersHeader {
+        font-size: 4rem;
+        font-weight: bold;
+        color: #FF6A68;
+     }
+     /*****************/
+     /* Commonalities */
+     /*****************/
+     #commonalityHeader {
+        color: #FF6A68;
+        font-weight: bold;
+     }
  }
  /* iPads (portrait and landscape) ----------- */
  
@@ -215,3 +227,11 @@
  /****************/
  /* Profile Page */
  /****************/
+#gameLink {
+    color: black;
+}
+
+#gameLink:hover, #gameLink:active {
+    text-decoration: none;
+    font-weight: bold;
+}
