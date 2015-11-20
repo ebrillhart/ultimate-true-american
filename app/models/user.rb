@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-
+  
 	# checks for email and checks that it is unique
 	validates :email,
   		presence: true,
