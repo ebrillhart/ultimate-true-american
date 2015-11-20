@@ -28,7 +28,7 @@ before_action :is_authenticated?
     # delete a player from current game
     
     Player.find(params[:id]).delete
-    redirect_to player_path
+    redirect_to "/game/"+ params[:game_id].to_s
   end
 
   private

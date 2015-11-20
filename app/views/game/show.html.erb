@@ -5,6 +5,7 @@
       <div class="row">
     	 <h1 id="gameTitle"><%= @game.title %></h1>
     	 <h2 id="gameDescription"><%= @game.description %></h2>	
+       <h2 id="playerCount">Number of Players: <span id="noOfPlayers"><%= @game.player.count %></span></h2>
       </div>
       <div class="row">
         <button class="btn" id="beerCalculator">We Need How Many Beers?!?</button>
@@ -16,15 +17,18 @@
         <button class="btn" id="gameOver"><a href="/profile">Game Over!</a></button>
       </div>
     </div>
-    <div class="col xs-6">
+    <div class="col-xs-6">
     <h2 class="text-center" id="playersHeader">Players</h2>
   	<% @game.player.each do |player| %>
     	<div class="well">
-    			<h2><%= player.alias %> <small>(<%= player.username %>)</small></h2>
-          <div class="row">
-    			 <p><%= player.beers %> beers consumed</p>
-           <button id="">Finished a Beer!</button>
-          </div>
+    		<h2><%= player.alias %> <small>(<%= player.username %>)</small></h2>
+        <div class="row">
+    			<p><%= player.beers %> beers consumed</p>
+          <button id="">Finished a Beer!</button>
+          <div class="col-xs-4">
+            <button><%= link_to 'Remove Player', player_path(player), method: :delete %></button>
+          </div> 
+        </div>
     	</div>
   	<% end %>
     <!-- sign up trigger -->
