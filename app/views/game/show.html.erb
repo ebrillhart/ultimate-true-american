@@ -62,6 +62,7 @@
           <%= bootstrap_form_for :player, url: "/players" do |f| %>
           <%= bootstrap_form_for :player, url: game_path do |f| %>
 				    <%= f.text_field :username %>
+            <%= f.text_field :alias %>
             <%= hidden_field_tag(:game_id, @game.id) %>
 
 				  <%= f.primary 'Add' %>
