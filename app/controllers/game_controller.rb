@@ -9,7 +9,7 @@ class GameController < ApplicationController
     # creates the game/adds to database, no view
     @game = Game.create game_params
     # redirect_to game_index_path
-    redirect_to "/game/show/"+@game.id.to_s
+    redirect_to "/game/"+@game.id.to_s
   end
 
   def new
@@ -21,7 +21,7 @@ class GameController < ApplicationController
   # end
 
   def show
-    # shows a dashboard of players with current beer count, beer button, turn button
+    @game = Game.find(params[:id])
   end
 
   # def update
