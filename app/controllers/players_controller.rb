@@ -1,11 +1,12 @@
 class PlayersController < ApplicationController
+  before_action :is_authenticated?
   # def index
   # end
-  before_action :is_authenticated?
+before_action :current_user
   def create
     # same view as create game view, allows user to add player usernames to game
     player = Player.create player_params
-    redirect_to "/game/"+@game.id.to_s
+    redirect_to "/game/"+ params[:game_id]
   end
 
   def new
