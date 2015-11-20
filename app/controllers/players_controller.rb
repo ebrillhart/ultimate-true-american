@@ -25,6 +25,7 @@ before_action :is_authenticated?
 
   def destroy
     # delete a player from current game
+    
     Player.find(params[:id]).delete
     redirect_to player_path
   end
