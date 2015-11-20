@@ -8,8 +8,23 @@
        <h2 id="playerCount">Number of Players: <span id="noOfPlayers"><%= @game.player.count %></span></h2>
       </div>
       <div class="row">
-        <button class="btn" id="beerCalculator">We Need How Many Beers?!?</button>
+        <!-- beer calc trigger -->
+        <button class="btn" id="beerCalculator"><a data-toggle="modal" href="#beerCalcModal">We Need How Many Beers?!?</a></button>
       </div>
+      <!-- beer calc modal -->
+      <div class="modal fade" id="beerCalcModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Beer Calculator</h4>
+            </div>
+            <div class="modal-body">
+              <p id="beerModalText"></p>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
       <div class="row">
         <button class="btn" id="gameOver"><a href="/turn/index">Take a Turn</a></button>
       </div>
@@ -31,7 +46,7 @@
         </div>
     	</div>
   	<% end %>
-    <!-- sign up trigger -->
+    <!-- add player trigger -->
     <button class="btn center-block" id="addPlayerBtn"><a data-toggle="modal" href="#addPlayerModal">Add Player</a></button>
     </div>
   </div>
