@@ -24,7 +24,6 @@ Rails.application.routes.draw do
   get 'turn/index'
   get 'thecount/show'
   get 'quote/show'
-  get 'commontrait/show'
 
   # commonality controller
 

@@ -24,7 +24,7 @@
 			<% @current_user.game.each do |game| %>
 				<div class="well">
 					<!-- this title should be able to link to the game dashboard to participate -->
-					<h2><%= game.title %></h2>
+					<h2><%= link_to game.title, game, id: "gameLink" %></h2>
 					<h3><%= game.description %></h3>
 					<p>Created by: <%= game.user.username %> on <%= game.created_at %></p>
 				</div>
