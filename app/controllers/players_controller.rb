@@ -6,6 +6,7 @@ before_action :is_authenticated?
   def create
     # same view as create game view, allows user to add player usernames to game
     player = Player.create player_params
+    player.update_columns(game_id: params[:game_id])
     redirect_to "/game/"+ params[:game_id]
   end
 
