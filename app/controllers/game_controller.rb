@@ -8,7 +8,8 @@ class GameController < ApplicationController
   def create
     # creates the game/adds to database, no view
     @game = Game.create game_params
-    redirect_to game_index_path
+    # redirect_to game_index_path
+    redirect_to "/game/show/"+@game.id.to_s
   end
 
   def new
