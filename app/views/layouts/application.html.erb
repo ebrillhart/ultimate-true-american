@@ -38,7 +38,7 @@
         <li><a href="/rules">View Rules</a></li>
         <!-- log out trigger -->
         <% if @current_user %>
-        <li><a href="/profile"><%= @current_user %></a></li>
+        <li><a href="/profile"><%= @current_user.username %></a></li>
         <li><a href="/logout">Log Out</a></li>
         <% else %>
         <!-- sign up trigger -->

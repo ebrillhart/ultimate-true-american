@@ -85,6 +85,7 @@
 
 .navbar-default {
     background-color: #3BB1F7;
+    width: 100%;
 }
 
 .navbar-default .navbar-brand {
@@ -107,7 +108,7 @@
     margin-left: 60px;
     margin-top: 30px;
     margin-bottom: 15px;
-/*    position: fixed;
+    /*position: fixed;*/
     bottom: 0;
-    width: 100%;*/
+    width: 100%;
 }
