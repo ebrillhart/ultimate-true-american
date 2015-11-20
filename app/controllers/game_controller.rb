@@ -9,8 +9,8 @@ before_action :is_authenticated?
   def create
     # creates the game/adds to database, no view
     @game = Game.create game_params
-    @game.update_columns(user_id: session[:user_id])
-    puts session[:user_id]
+    @game.update_columns(game_id: session[:user_id])
+    puts session[:game_id]
     # redirect_to game_index_path
     redirect_to "/game/"+@game.id.to_s
   end
@@ -25,6 +25,8 @@ before_action :is_authenticated?
 
   def show
     @game = Game.find(params[:id])
+    session[:game_id] = @game.id
+    puts session[:user_id]
   end
 
   # def update
