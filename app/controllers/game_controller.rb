@@ -9,7 +9,7 @@ class GameController < ApplicationController
     # creates the game/adds to database, no view
     @game = Game.create game_params
     # redirect_to game_index_path
-    redirect_to "/game/show/"+@game.id.to_s
+    redirect_to "/game/"+@game.id.to_s
   end
 
   def new
@@ -36,6 +36,6 @@ class GameController < ApplicationController
   private
 
   def game_params
-    params.require(:game).permit(:id, :title, :description, :no_of_players)
+    params.require(:game).permit(:id, :title, :description, :no_of_players, :created_at)
   end
 end
