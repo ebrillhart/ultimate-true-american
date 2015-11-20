@@ -21,7 +21,7 @@ class GameController < ApplicationController
   # end
 
   def show
-    # shows a dashboard of players with current beer count, beer button, turn button
+    @game = Game.find(params[:id])
   end
 
   # def update
