@@ -15,10 +15,44 @@ class UsersController < ApplicationController
       messages = user.errors.map { |k, v| "#{k} #{v}" }
       redirect_to signup_path
     end
+  end
   def show
   	# user profile page with option to create or join game and view past games participated in
+  # make a call to the players db where the current_user username = players.username
+  # save as an array
+ 
+
+  @players = Player.where(username: @current_user.username)
+
+  games = []
+
+  @players.each do |thing|
+    games.push(thing.game_id)
   end
-end
+
+  @current_games = Game.find(games)
+    @players = Player.where(username: @current_user.username)
+
+  # games = []
+
+  # @players.each do |thing|
+  #   games.push(thing.game_id)
+  # end
+
+  # @current_games = Game.find(games)
+
+
+
+
+  # @current_games =
+  # players.each do |p|
+  #   games = []
+  #     # p.game.title
+  #     games.push(p.game.title)
+  #     @current_games = games
+  # end
+
+  end
   private
 	def user_params
 		params.require(:user).permit(:email, :username, :password, :password_confirmation)
