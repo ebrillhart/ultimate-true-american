@@ -38,11 +38,13 @@
     	<div class="well">
     		<h2><%= player.alias %> <small>(<%= player.username %>)</small></h2>
         <div class="row">
-    			<p><%= player.beers %> beers consumed</p>
-          <button id="">Finished a Beer!</button>
+          <div class="col-xs-8">
+    			 <p><%= player.beers %> beers consumed</p>
+            <button id="playerDelete"><%= link_to 'Remove Player', player_path(player), method: :delete %></button>
+          </div>
           <div class="col-xs-4">
-            <button><%= link_to 'Remove Player', player_path(player), method: :delete %></button>
-          </div> 
+            <button id="beerDone">Finished a Beer!</button>
+          </div>
         </div>
     	</div>
   	<% end %>
