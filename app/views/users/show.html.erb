@@ -21,6 +21,7 @@
 	</div>
 	<div class="row">
 		<div class="col-xs-12">
+			<h3>Games Created By You</h3>
 			<% @current_user.game.each do |game| %>
 				<div class="well">
 					<h2><%= link_to game.title, game, id: "gameLink" %></h2>
@@ -28,7 +29,14 @@
 					<p>Created by: <%= game.user.username %> on <%= game.created_at %></p>
 				</div>
 			<% end %>
-		<%=@current_games %>
+			<h3>Games Where You're a Player</h3>
+			<% @current_games.each do |game| %>
+				<div class="well">
+					<h2><%= link_to game.title, game, id: "gameLink" %></h2>
+					<h3><%= game.description %></h3>
+					<p>Created by: <%= game.user.username %> on <%= game.created_at %></p>
+				</div>
+			<% end %>
 		</div>
 	</div>
 </div>
