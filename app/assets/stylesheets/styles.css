@@ -112,16 +112,33 @@
          font-weight: bold;
      }
      .form-control {
-        font-size: 3rem;
-        height: 60px;
+         font-size: 3rem;
+         height: 60px;
      }
      /******************/
      /* Game Dashboard */
      /******************/
      #gameTitle, #playersHeader {
-         font-size: 4rem;
+         font-size: 5rem;
          font-weight: bold;
-         color: #FF6A68;
+     }
+     #gameDescription {
+        font-size: 3.5rem;
+     }
+     #beerCalculator, #takeTurn, #gameOver {
+        font-size: 1.5rem;
+        padding: 15px;
+        font-weight: bold;
+        margin-top: 15px;
+        margin-left: -15px;
+     }
+     #addPlayerBtn, #playerDelete, #beerDone {
+        font-size: 1.5rem;
+        padding: 15px;
+        font-weight: bold;
+     }
+     #playerDelete {
+        margin-top: 45px;
      }
      /*****************/
      /* Commonalities */
@@ -259,8 +276,33 @@
          font-weight: bold;
      }
      .form-control {
-        font-size: 3rem;
-        height: 60px;
+         font-size: 3rem;
+         height: 60px;
+     }
+     /******************/
+     /* Game Dashboard */
+     /******************/
+     #gameTitle, #playersHeader {
+         font-size: 5rem;
+         font-weight: bold;
+     }
+     #gameDescription {
+        font-size: 3.5rem;
+     }
+     #beerCalculator, #takeTurn, #gameOver {
+        font-size: 1.5rem;
+        padding: 15px;
+        font-weight: bold;
+        margin-top: 15px;
+        margin-left: -15px;
+     }
+     #addPlayerBtn, #playerDelete, #beerDone {
+        font-size: 1.5rem;
+        padding: 15px;
+        font-weight: bold;
+     }
+     #playerDelete {
+        margin-top: 45px;
      }
  }
  /*******************/
@@ -276,6 +318,10 @@
  * {
      border-radius: 0px;
      box-shadow: none;
+ }
+
+ .well {
+    border-radius: 0px;
  }
  
  body {
@@ -336,7 +382,7 @@
  
  #copyrightDiv {
      margin-left: 60px;
-     margin-top: 30px;
+     margin-top: 40px;
      margin-bottom: 15px;
      /*position: fixed;*/
      bottom: 0;
@@ -407,18 +453,18 @@
      margin-top: 15px;
      margin-bottom: 15px;
  }
-
+ 
  .modal-title {
-    font-weight: bolder;
-    color: #FF6A68;
+     font-weight: bolder;
+     color: #FF6A68;
  }
-
+ 
  .formButton, #signUpButton, #signInButton {
-    background-color: #FF6A68;
-    color: white;
-    font-size: 1.5rem;
-    padding: 10px;
-    font-weight: bold;
+     background-color: #FF6A68;
+     color: white;
+     font-size: 1.5rem;
+     padding: 10px;
+     font-weight: bold;
  }
  /************/
  /* New Game */
@@ -434,4 +480,34 @@
  
  label {
      color: #3BB1F7;
+ }
+ /******************/
+ /* Game Dashboard */
+ /******************/
+ 
+ #gameTitle, #playersHeader {
+     color: #FF6A68;
+ }
+ 
+ #gameDescription {
+     color: #3BB1F7;
+ }
+
+ #playerCount {
+    color: #777;
+ }
+
+ #beerCalculator, #takeTurn, #beerDone, #addPlayerBtn {
+    background-color: #3BB1F7;
+    color: white;
+ }
+
+ #gameOver, #playerDelete {
+    background-color: #FF6A68;
+    color: white;
+ }
+
+ #beerCalculator a, #takeTurn a, #gameOver a, #beerCalculator a:hover, #beerCalculator a:active, #takeTurn a:hover, #takeTurn a:active, #gameOver a:hover, #gameOver a:active, #addPlayerBtn a, #addPlayerBtn a:hover, #addPlayerBtn a:active {
+    color: white;
+    text-decoration: none;
  }
