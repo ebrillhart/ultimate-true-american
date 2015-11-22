@@ -339,3 +339,10 @@
      text-decoration: none;
      font-weight: bold;
  }
+ /************/
+ /* partials */
+ /************/
+ #signUpOr, #logInOr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+ }

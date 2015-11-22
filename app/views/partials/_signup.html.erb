@@ -1,11 +1,15 @@
-<%= link_to "Signup with Facebook", "/auth/facebook", class: "btn btn-primary" %>
-
-
 <%= bootstrap_form_for :user, url: signup_path do |f| %>
   <%= f.email_field :email %>
   <%= f.text_field :username %>
   <%= f.password_field :password %>
   <%= f.password_field :password_confirmation %>
 
-  <%= f.primary 'Signup' %>
+  <%= f.primary 'Sign Up' %>
 <% end %>
+
+<div id="signUpOr">
+<h4>OR</h4>
+</div>
+<div id="fbButtonSignUp">
+<%= link_to "Sign Up with Facebook", "/auth/facebook", class: "btn btn-primary" %>
+</div>
