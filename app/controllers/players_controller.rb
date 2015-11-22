@@ -23,13 +23,12 @@ before_action :is_authenticated?
 
   def update
      # when users change their alias on the join game page (game index)
-      # player.update_columns(beers: params[:game_id]+1)
-      # redirect_to "/game/"+ params[:game_id]
+      player = player.beers(beers: params[:game_id] =+ 1)
+      redirect_to "/game/"+ params[:game_id]
   end
 
   def destroy
     # delete a player from current game
-    
     Player.find(params[:id]).delete
     redirect_to "/game/"+ session[:game_id].to_s
   end
