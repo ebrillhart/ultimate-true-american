@@ -49,6 +49,9 @@
      .howToText {
          font-size: 3rem;
      }
+     #copyright {
+         font-size: 0.8rem;
+     }
      /**************/
      /* rules page */
      /**************/
@@ -154,12 +157,30 @@
          margin-top: 40px;
          text-align: center;
      }
-     /*****************/
-     /* Commonalities */
-     /*****************/
+     /********************/
+     /* Commonality Page */
+     /********************/
      #commonalityHeader {
-         color: #FF6A68;
+         font-size: 6rem;
          font-weight: bold;
+         margin-bottom: 70px;
+     }
+     #commonalityShow {
+         font-weight: bold;
+         font-size: 3rem;
+         padding: 25px;
+         margin-top: 40px;
+         margin-bottom: 45px;
+     }
+     #commonalityDashboard {
+         font-weight: bold;
+         font-size: 3rem;
+         padding: 25px;
+         margin-top: 40px;
+         margin-bottom: 60px;
+     }
+     #commonality1, #commonality2, #commonalityAnswer {
+         font-size: 3rem;
      }
  }
  /* iPads (portrait and landscape) ----------- */
@@ -331,6 +352,31 @@
          font-weight: bold;
          margin-top: 40px;
          text-align: center;
+     }
+     /********************/
+     /* Commonality Page */
+     /********************/
+     #commonalityHeader {
+         font-size: 5rem;
+         font-weight: bolder;
+         margin-bottom: 70px;
+     }
+     #commonalityShow {
+         font-weight: bold;
+         font-size: 2.5rem;
+         padding: 25px;
+         margin-top: 40px;
+         margin-bottom: 45px;
+     }
+     #commonalityDashboard {
+         font-weight: bold;
+         font-size: 2.5rem;
+         padding: 25px;
+         margin-top: 40px;
+         margin-bottom: 60px;
+     }
+     #commonality1, #commonality2, #commonalityAnswer {
+         font-size: 2.5rem;
      }
  }
  /*******************/
@@ -558,11 +604,13 @@
  /********************/
  /* Commonality Page */
  /********************/
+ 
  #commonalityHeader {
-    color: #FF6A68;
+     color: #FF6A68;
  }
+ 
  #commonalityShow, #commonalityDashboard, #commonalityShow a, #commonalityShow a:hover, #commonalityShow a:active, #commonalityDashboard a, #commonalityDashboard a:hover, #commonalityDashboard a:active {
-    background-color: #3BB1F7;
-    color: white;
-    text-decoration: none;
+     background-color: #3BB1F7;
+     color: white;
+     text-decoration: none;
  }

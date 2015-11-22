@@ -42,7 +42,7 @@ $(document).ready(function() {
     
     //button to show the answer
     $("#commonalityShow").on("click", function() {
-        $("#commonalityAnswer").fadeIn(500);
+        $("#div3").fadeIn(500);
     });
     // function that creates a random number for the count turn option
     // should only generate a number between 1 and 5
