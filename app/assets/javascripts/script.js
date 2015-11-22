@@ -39,7 +39,6 @@ $(document).ready(function() {
         $('#commonalityAnswer').html(answer);
     }
     commonality();
-
     //button to show the answer
     $("#commonalityShow").on("click", function() {
         $("#commonalityAnswer").fadeIn(500);
@@ -51,5 +50,4 @@ $(document).ready(function() {
         $('#countNumber').html(number);
     }
     theCount();
-
 });

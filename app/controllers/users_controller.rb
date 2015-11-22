@@ -51,7 +51,6 @@ class UsersController < ApplicationController
   #     games.push(p.game.title)
   #     @current_games = games
   # end
-
   end
   private
 	def user_params
