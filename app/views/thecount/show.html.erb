@@ -1,3 +1,11 @@
 <!-- random number generator -->
-<h1>Thecount#show</h1>
-<p>Find me in app/views/thecount/show.html.erb</p>
+<div class="container">
+	<div class="row">
+		<div class="center-block" id="theCount">
+			<h1 class="text-center" id="countNumber"></h1>	
+		</div>
+	</div>
+	<div class="row">
+		<button class="btn center-block" id="countDashboard"><a href="/game/<%= session[:game_id] %>">Back to Dashboard</a></button>
+	</div>	
+</div>

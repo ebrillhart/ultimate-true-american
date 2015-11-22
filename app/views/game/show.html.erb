@@ -1,15 +1,25 @@
 <!-- dashboard of current game with players/aliases, and number of beers they've finished along with a button for taking a turn AND a beer button, delete button for players -->
 <div class="container">	
   <div class="row">
-    <div class="col-xs-6">
+    <div class="col-xs-12 col-md-6">
       <div class="row">
     	 <h1 id="gameTitle"><%= @game.title %></h1>
     	 <h2 id="gameDescription"><%= @game.description %></h2>	
        <h2 id="playerCount">Number of Players: <span id="noOfPlayers"><%= @game.player.count %></span></h2>
       </div>
       <div class="row">
-        <!-- beer calc trigger -->
-        <button class="btn" id="beerCalculator"><a data-toggle="modal" href="#beerCalcModal">We Need How Many Beers?!?</a></button>
+        <div class="col-xs-12 col-md-12">
+          <!-- beer calc trigger -->
+          <button class="btn" id="beerCalculator"><a data-toggle="modal" href="#beerCalcModal">We Need How Many Beers?!?</a></button>
+        </div>
+        <div class="col-xs-12 col-md-12">
+          <!-- button that takes user to turn options -->
+          <button class="btn" id="takeTurn"><a href="/turn/index">Take a Turn</a></button>
+        </div>
+        <div class="col-xs-12 col-md-12">
+          <!-- ends game and takes user back to their profile -->
+          <button class="btn" id="gameOver"><a href="/profile">Game Over!</a></button>
+        </div>
       </div>
       <!-- beer calc modal -->
       <div class="modal fade" id="beerCalcModal">
@@ -17,7 +27,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title">Beer Calculator</h4>
+              <h2 class="modal-title">Beer Calculator</h2>
             </div>
             <div class="modal-body">
               <p id="beerModalText"></p>
@@ -25,26 +35,28 @@
           </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
       </div><!-- /.modal -->
-      <div class="row">
-        <button class="btn" id="gameOver"><a href="/turn/index">Take a Turn</a></button>
-      </div>
-      <div class="row">
-        <button class="btn" id="gameOver"><a href="/profile">Game Over!</a></button>
-      </div>
     </div>
-    <div class="col-xs-6">
-    <h2 class="text-center" id="playersHeader">Players</h2>
+    <div class="col-xs-12 col-md-6">
+    <h1 class="text-center" id="playersHeader">Players</h1>
   	<% @game.player.each do |player| %>
-    	<div class="well">
-    		<h2><%= player.alias %> <small>(<%= player.username %>)</small></h2>
+    	<div class="well"> 
         <div class="row">
+<<<<<<< HEAD
     			<p><%= player.beers %> beers consumed</p>
         <!--   <button id="">Finished a Beer!</button> -->
         <button><%= link_to 'Finished a Beer', player_path(player), method: :put %></button>
+=======
+          <div class="col-xs-8">
+            <h2><%= player.alias %> <small>(<%= player.username %>)</small></h2>
+    			  <p><%= player.beers %> beers consumed</p>
+            <!-- increases beer count when player finishes a beer -->
+            <button class="btn" id="beerDone">Finished a Beer!</button>
+          </div>
+>>>>>>> 3bd3268e235757d60e78ec35e62ae4514b2ee5e4
           <div class="col-xs-4">
-            <button><%= link_to 'Remove Player', player_path(player), method: :delete %></button>
-          </div> 
-        </div>
+            <%= link_to 'Remove Player', player_path(player), method: :delete, class: "btn", id: "playerDelete" %>
+          </div>
+        </div>    
     	</div>
   	<% end %>
     <!-- add player trigger -->
@@ -57,7 +69,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title">Add Player</h4>
+          <h2 class="modal-title">Add Player</h2>
         </div>
         <div class="modal-body">
           <%= bootstrap_form_for :player, url: "/players" do |f| %>

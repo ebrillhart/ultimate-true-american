@@ -20,8 +20,19 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-xs-12">
+		<div class="col-xs-12 col-md-6">
+			<h3 id="gamesCreator">Games Created By You</h3>
 			<% @current_user.game.each do |game| %>
+				<div class="well">
+					<h2><%= link_to game.title, game, id: "gameLink" %></h2>
+					<h3><%= game.description %></h3>
+					<p>Created by: <%= game.user.username %> on <%= game.created_at %></p>
+				</div>
+			<% end %>
+		</div>
+		<div class="col-xs-12 col-md-6">	
+			<h3 id="gamesPlayer">Games Where You're a Player</h3>
+			<% @current_games.each do |game| %>
 				<div class="well">
 					<h2><%= link_to game.title, game, id: "gameLink" %></h2>
 					<h3><%= game.description %></h3>
