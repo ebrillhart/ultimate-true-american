@@ -66,11 +66,13 @@
          font-size: 8rem;
          margin-top: 60px;
          color: #FF6A68;
+         font-weight: bold;
      }
      #yourGames {
-         margin-top: 100px;
+         margin-top: 150px;
          font-size: 4.5em;
          color: #FF6A68;
+         font-weight: bold;
      }
      .navbar-default {
          padding-top: 30px;
@@ -80,11 +82,16 @@
      .navbar-default .navbar-brand {
          font-size: 3rem;
      }
+     #gamesCreator, #gamesPlayer {
+        font-size: 4rem;
+        font-weight: bold;
+     }
      #newGameBtn {
          margin-top: 75px;
          padding-top: 60px;
          padding-bottom: 60px;
          font-size: 3rem;
+         font-weight: bold;
          background-color: #3BB1F7;
          color: white;
      }
@@ -191,20 +198,26 @@
      /* profile page */
      /****************/
      #profileHeader {
-         font-size: 8rem;
+         font-size: 13rem;
          margin-top: 60px;
          color: #FF6A68;
+         font-weight: bold;
      }
      #yourGames {
-         margin-top: 100px;
-         font-size: 4.5em;
+         margin-top: 200px;
+         font-size: 7em;
          color: #FF6A68;
+         font-weight: bold;
+     }
+     #gamesCreator, #gamesPlayer {
+        font-size: 4rem;
+        font-weight: bold;
      }
      #newGameBtn {
          margin-top: 75px;
-         padding-top: 60px;
-         padding-bottom: 60px;
+         padding: 60px 20px 60px 20px;
          font-size: 3rem;
+         font-weight: bold;
          background-color: #3BB1F7;
          color: white;
      }
@@ -330,7 +343,6 @@
  /****************/
  /* Profile Page */
  /****************/
- 
  #gameLink {
      color: black;
  }
@@ -339,10 +351,16 @@
      text-decoration: none;
      font-weight: bold;
  }
+
+  #gamesCreator, #gamesPlayer {
+    color: #3BB1F7;
+    font-weight: bold;
+ }
  /************/
  /* partials */
  /************/
  #signUpOr, #logInOr {
     margin-top: 15px;
     margin-bottom: 15px;
- }
+} 
+
