@@ -5,14 +5,17 @@
      /* Landing Page */
      /****************/
      #homeHeader1 {
-         font-size: 12rem;
+         font-size: 15rem;
      }
      #homeHeader2 {
-         font-size: 6rem;
+         font-size: 7rem;
+     }
+     #homeSmall {
+        font-size: 5rem;
      }
      #howTo {
          margin-top: 700px;
-         border: 1px solid black;
+         margin-bottom: 30px;
      }
      #homepageDiv {
          height: 700px;
@@ -35,6 +38,19 @@
      }
      #homepageDiv h1 {
          vertical-align: middle;
+     }
+     #howToHeader {
+        font-size: 7.5rem;
+        font-weight: bold;
+     }
+     .howToIcon {
+        font-size: 6rem;
+     }
+     .howToText {
+        font-size: 3rem;
+     }
+     #copyright {
+        font-size: 1.5rem;
      }
      /****************/
      /* profile page */
@@ -115,8 +131,7 @@
          padding-top: 0px;
      }
      #howTo {
-         margin-top: 700px;
-         border: 1px solid black;
+         margin-top: 250px;
      }
      #homepageDiv {
          height: 300px;
@@ -134,6 +149,19 @@
      }
      #homepageDiv h1 {
          vertical-align: middle;
+     }
+     #howToHeader {
+        font-size: 7.5rem;
+        font-weight: bold;
+     }
+     .howToIcon {
+        font-size: 6rem;
+     }
+     .howToText {
+        font-size: 3rem;
+     }
+     #copyright {
+        font-size: 1.5rem;
      }
      /****************/
      /* profile page */
@@ -214,6 +242,14 @@
      font-weight: bolder;
      margin-top: 0px;
      padding-top: 0px;
+ }
+
+ #howToHeader {
+    color: #FF6A68;
+ }
+
+ .howToIcon {
+    color: #3BB1F7;
  }
  
  #copyrightDiv {
