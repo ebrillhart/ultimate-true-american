@@ -39,7 +39,8 @@
     		<h2><%= player.alias %> <small>(<%= player.username %>)</small></h2>
         <div class="row">
     			<p><%= player.beers %> beers consumed</p>
-          <button id="">Finished a Beer!</button>
+        <!--   <button id="">Finished a Beer!</button> -->
+        <button><%= link_to 'Finished a Beer', player_path(player), method: :put %></button>
           <div class="col-xs-4">
             <button><%= link_to 'Remove Player', player_path(player), method: :delete %></button>
           </div> 
