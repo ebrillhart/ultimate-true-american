@@ -4,12 +4,12 @@
   <%= f.password_field :password %>
   <%= f.password_field :password_confirmation %>
 
-  <%= f.primary 'Sign Up' %>
+  <%= f.primary 'Sign Up', id: "signUpButton" %>
 <% end %>
 
 <div id="signUpOr">
-<h4>OR</h4>
+<h4 class="or">or</h4>
 </div>
 <div id="fbButtonSignUp">
-<%= link_to "Sign Up with Facebook", "/auth/facebook", class: "btn btn-primary" %>
+<%= link_to "Sign Up with Facebook", "/auth/facebook", class: "btn formButton" %>
 </div>

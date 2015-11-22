@@ -53,11 +53,11 @@
      /* rules page */
      /**************/
      #rulesHeader {
-        font-size: 10rem;
-        font-weight: bold;
+         font-size: 10rem;
+         font-weight: bold;
      }
      #rulesHeaderSmall {
-        font-size: 4rem;
+         font-size: 4rem;
      }
      /****************/
      /* profile page */
@@ -83,8 +83,8 @@
          font-size: 3rem;
      }
      #gamesCreator, #gamesPlayer {
-        font-size: 4rem;
-        font-weight: bold;
+         font-size: 4rem;
+         font-weight: bold;
      }
      #newGameBtn {
          margin-top: 75px;
@@ -94,6 +94,26 @@
          font-weight: bold;
          background-color: #3BB1F7;
          color: white;
+     }
+     /************/
+     /* New Game */
+     /************/
+     #createGameBtn {
+         font-size: 3rem;
+         padding: 15px;
+         margin-top: 30px;
+     }
+     #newGameHeader {
+         font-size: 8rem;
+         font-weight: bold;
+     }
+     label {
+         font-size: 4rem;
+         font-weight: bold;
+     }
+     .form-control {
+        font-size: 3rem;
+        height: 60px;
      }
      /******************/
      /* Game Dashboard */
@@ -182,17 +202,17 @@
      /* Rules Page */
      /**************/
      #rulesHeader {
-        font-size: 11rem;
-        font-weight: bold;
+         font-size: 11rem;
+         font-weight: bold;
      }
      #rulesHeaderSmall {
-        font-size: 3rem;
+         font-size: 3rem;
      }
      .rulesSectionHead {
-        font-size: 3rem;
+         font-size: 3rem;
      }
      .rulesText {
-        font-size: 1.75rem;
+         font-size: 1.75rem;
      }
      /****************/
      /* profile page */
@@ -210,8 +230,8 @@
          font-weight: bold;
      }
      #gamesCreator, #gamesPlayer {
-        font-size: 4rem;
-        font-weight: bold;
+         font-size: 4rem;
+         font-weight: bold;
      }
      #newGameBtn {
          margin-top: 75px;
@@ -220,6 +240,27 @@
          font-weight: bold;
          background-color: #3BB1F7;
          color: white;
+     }
+     /************/
+     /* New Game */
+     /************/
+     #createGameBtn {
+         font-size: 2rem;
+         padding: 10px;
+         margin-top: 30px;
+         margin-bottom: 30px;
+     }
+     #newGameHeader {
+         font-size: 8.5rem;
+         font-weight: bold;
+     }
+     label {
+         font-size: 3rem;
+         font-weight: bold;
+     }
+     .form-control {
+        font-size: 3rem;
+        height: 60px;
      }
  }
  /*******************/
@@ -314,35 +355,37 @@
  /**************/
  /* Rules Page */
  /**************/
+ 
  #rulesHeader {
-    color: #FF6A68;
+     color: #FF6A68;
  }
-
+ 
  #rulesHeaderSmall, #sourceLink {
-    color: #3BB1F7;
+     color: #3BB1F7;
  }
-
+ 
  #sourceLink:hover, #sourceLink:active {
-    color: #3BB1F7;
-    text-decoration: none;
-    font-weight: bold;
+     color: #3BB1F7;
+     text-decoration: none;
+     font-weight: bold;
  }
-
+ 
  #rulesSummary, .rulesText {
-    color: #777;
+     color: #777;
  }
-
+ 
  .rulesText strong {
-    color: #3BB1F7;
+     color: #3BB1F7;
  }
-
+ 
  .rulesSectionHead {
-    color: #FF6A68;
-    font-weight: bold;
+     color: #FF6A68;
+     font-weight: bold;
  }
  /****************/
  /* Profile Page */
  /****************/
+ 
  #gameLink {
      color: black;
  }
@@ -351,16 +394,44 @@
      text-decoration: none;
      font-weight: bold;
  }
-
-  #gamesCreator, #gamesPlayer {
-    color: #3BB1F7;
-    font-weight: bold;
+ 
+ #gamesCreator, #gamesPlayer {
+     color: #3BB1F7;
+     font-weight: bold;
  }
  /************/
  /* partials */
  /************/
+ 
  #signUpOr, #logInOr {
-    margin-top: 15px;
-    margin-bottom: 15px;
-} 
+     margin-top: 15px;
+     margin-bottom: 15px;
+ }
 
+ .modal-title {
+    font-weight: bolder;
+    color: #FF6A68;
+ }
+
+ .formButton, #signUpButton, #signInButton {
+    background-color: #FF6A68;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    font-weight: bold;
+ }
+ /************/
+ /* New Game */
+ /************/
+ 
+ #createGameBtn {
+     background-color: #FF6A68;
+ }
+ 
+ #newGameHeader {
+     color: #FF6A68;
+ }
+ 
+ label {
+     color: #3BB1F7;
+ }
