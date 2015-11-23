@@ -22,7 +22,7 @@ $(document).ready(function() {
     quote();
     // button to show the second half of the quote
     $("#quoteAnswer").on("click", function() {
-        $("#secondHalf").fadeIn(500);
+        $("#quoteDiv2").fadeIn(500);
     });
     // function that randomizes a commonality pair on the commonality turn option
     // should choose a random pairing each time the turn is chosen
