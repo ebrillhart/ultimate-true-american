@@ -218,6 +218,32 @@
          margin-top: 40px;
          margin-bottom: 60px;
      }
+     /**************/
+     /* About Page */
+     /**************/
+     #aboutHeader {
+         font-size: 13rem;
+         font-weight: bold;
+     }
+     .devName {
+        font-size: 4.5rem;
+        margin-top: 15px;
+     }
+     #theDevelopers, #theGame {
+         font-size: 6rem;
+         font-weight: bold;
+     }
+     .devText, #gameAboutText, #sourceCode {
+         font-size: 3rem;
+     }
+     #sourceCode {
+        font-weight: bold;
+     }
+     .devIcon, #sourceCodeIcon {
+        word-spacing: 30px;
+        font-size: 5rem;
+        margin-bottom: 40px;
+     }
  }
  /* iPads (portrait and landscape) ----------- */
  
@@ -450,6 +476,41 @@
          margin-top: 40px;
          margin-bottom: 60px;
      }
+     /**************/
+     /* About Page */
+     /**************/
+     #aboutHeader {
+         font-size: 16rem;
+         font-weight: bold;
+     }
+     .devName {
+        font-size: 5rem;
+        margin-top: 25px;
+        font-weight: bold;
+     }
+     #theDevelopers, #theGame {
+         font-size: 7rem;
+         font-weight: bold;
+     }
+
+     #theDevelopers {
+        margin-bottom: 25px;
+     }
+     .devText, #gameAboutText, #sourceCode {
+         font-size: 2rem;
+     }
+     #sourceCode {
+        font-weight: bold;
+        font-size: 3rem;
+     }
+     .devIcon {
+        word-spacing: 30px;
+        font-size: 4rem;
+        margin-bottom: 40px;
+     }
+     #sourceCodeIcon {
+        font-size: 6rem;
+     }
  }
  /*******************/
  /*******************/
@@ -638,9 +699,9 @@
  #gameDescription {
      color: #3BB1F7;
  }
-
+ 
  #beerModalText {
-    font-size: 2rem;
+     font-size: 2rem;
  }
  
  #playerCount {
@@ -719,20 +780,40 @@
  /***************/
  /* Error Pages */
  /***************/
+ 
  #errorHeader1 {
-    color: #FF6A68;
-    font-size: 15rem;
-    font-weight: bold;
-    margin-top: 30px;
+     color: #FF6A68;
+     font-size: 15rem;
+     font-weight: bold;
+     margin-top: 30px;
  }
-
+ 
  #errorHeader2 {
-    color: #3BB1F7;
-    font-size: 6rem;
-    font-weight: bold;
+     color: #3BB1F7;
+     font-size: 6rem;
+     font-weight: bold;
  }
-
+ 
  #errorText {
-    color: #777;
-    font-size: 1.75rem;
+     color: #777;
+     font-size: 1.75rem;
+ }
+ /**************/
+ /* About Page */
+ /**************/
+ 
+ .devPic {
+     max-width: 300px;
+ }
+ 
+ #aboutHeader, .devIcon a, .devIcon a:hover, .devIcon a:active, #sourceCodeIcon a, #sourceCodeIcon a:hover, #sourceCodeIcon a:active {
+     color: #FF6A68;
+ }
+ 
+ #theDevelopers, #theGame, #sourceCode, .devName {
+    color: #3BB1F7;
+ }
+ 
+ .devText, #gameAboutText {
+     color: #777;
  }
