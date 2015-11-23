@@ -644,6 +644,10 @@
  #gameDescription {
      color: #3BB1F7;
  }
+
+ #beerModalText {
+    font-size: 2rem;
+ }
  
  #playerCount {
      color: #777;
