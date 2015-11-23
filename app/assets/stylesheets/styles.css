@@ -611,7 +611,7 @@
      color: #FF6A68;
  }
  
- .formButton, #signUpButton, #signInButton {
+ .formButton, #signUpButton, #signInButton, #playerAdd {
      background-color: #FF6A68;
      color: white;
      font-size: 1.5rem;
@@ -643,6 +643,10 @@
  
  #gameDescription {
      color: #3BB1F7;
+ }
+
+ #beerModalText {
+    font-size: 2rem;
  }
  
  #playerCount {
