@@ -22,9 +22,13 @@ before_action :is_authenticated?
   # end
 
   def update
-     # when users change their alias on the join game page (game index)
-      player = player.beers(beers: params[:game_id] =+ 1)
-      redirect_to "/game/"+ params[:game_id]
+      #Code to update "beers drank"
+      User.find(@current_user.id)
+      user.beers =+ 1
+      user.save
+
+      # player = player.beers(beers: params[:game_id] =+ 1)
+      # redirect_to "/game/"+ params[:game_id]
   end
 
   def destroy
