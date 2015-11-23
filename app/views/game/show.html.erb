@@ -46,7 +46,7 @@
             <h2><%= player.alias %> <small>(<%= player.username %>)</small></h2>
     			  <p><%= player.beers %> beers consumed</p>
             <!-- increases beer count when player finishes a beer -->
-            <%= link_to 'Finished a Beer!', player_path(player), method: :put, class: "btn", id: "beerDone" %>
+            <%= link_to 'Finished a Beer!', player_path(player), url: game_path, method: :patch, class: "btn", id: "beerDone" %>
           </div>
           <div class="col-xs-4">
             <%= link_to 'Remove Player', player_path(player), method: :delete, class: "btn", id: "playerDelete" %>

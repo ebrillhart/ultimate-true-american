@@ -23,9 +23,15 @@ before_action :is_authenticated?
 
   def update
       #Code to update "beers drank"
-      User.find(@current_user.id)
-      user.beers =+ 1
-      user.save
+
+      player = Player.find(2)
+      mybeers = player.beers.to_i
+      mybeers += 1
+      mybeers = mybeers.to_s
+      # render json: user
+      player.beers = mybeers
+      player.save
+      redirect_to "/game/"+ session[:game_id].to_s
 
       # player = player.beers(beers: params[:game_id] =+ 1)
       # redirect_to "/game/"+ params[:game_id]
