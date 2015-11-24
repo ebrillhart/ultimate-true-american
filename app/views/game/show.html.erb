@@ -9,12 +9,11 @@
       </div>
       <div class="row">
         <div class="col-xs-12 col-md-12">
-          <!-- beer calc trigger -->
-          <button class="btn" id="beerCalculator"><a data-toggle="modal" href="#beerCalcModal">We Need How Many Beers?!?</a></button>
+          
         </div>
         <div class="col-xs-12 col-md-12">
-          <!-- button that takes user to turn options -->
-          <button class="btn" id="takeTurn"><a href="/turn/index">Take a Turn</a></button>
+          <!-- beer calc trigger -->
+          <button class="btn" id="beerCalculator"><a data-toggle="modal" href="#beerCalcModal">We Need How Many Beers?!?</a></button>
         </div>
         <div class="col-xs-12 col-md-12">
           <!-- ends game and takes user back to their profile -->
@@ -41,26 +40,31 @@
   	<% @game.player.each do |player| %>
     	<div class="well"> 
         <div class="row">
-        <!--   <button id="">Finished a Beer!</button> -->
-          <div class="col-xs-12">
+          <div class="col-xs-6">
             <h2 id="alias"><%= player.alias %> <small>(<%= player.username %>)</small></h2>
-    			  <p id="consumed"><%= player.beers %> beers consumed</p>
+            <p id="consumed"><%= player.beers %> beers consumed</p>
+          </div>
+          <div class="col-xs-6">
             <div class="row">
-              <div class="col-xs-6">
-                <!-- increases beer count when player finishes a beer -->
-                <%= link_to 'Finished a Beer!', player_path(player), url: game_path, method: :patch, class: "btn pull-left", id: "beerDone" %>
-              </div>
-              <div class="col-xs-6">
-                <!-- removes player -->
+              <!-- button that takes user to turn options -->
+                <button class="btn pull-right" id="takeTurn"><a href="/turn/index">Take a Turn</a></button>
+            </div>
+            <div class="row">
+              <!-- increases beer count when player finishes a beer -->
+                <%= link_to 'Finished a Beer!', player_path(player), url: game_path, method: :patch, class: "btn pull-right", id: "beerDone" %>
+            </div>
+            <div class="row">
+              <!-- removes player -->
                 <%= link_to 'Remove Player', player_path(player), method: :delete, class: "btn pull-right", id: "playerDelete" %>
-              </div>
             </div>
           </div>
         </div>    
     	</div>
   	<% end %>
-    <!-- add player trigger -->
-    <button class="btn center-block" id="addPlayerBtn"><a data-toggle="modal" href="#addPlayerModal">Add Player</a></button>
+      <div class="row">
+        <!-- add player trigger -->
+        <button class="btn center-block" id="addPlayerBtn"><a data-toggle="modal" href="#addPlayerModal">Add Player</a></button>
+      </div>
     </div>
   </div>
 	<!-- sign up modal -->

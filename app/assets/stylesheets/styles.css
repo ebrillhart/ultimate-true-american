@@ -156,16 +156,22 @@
      #playerCount {
          font-size: 4rem;
      }
-     #beerCalculator, #takeTurn, #gameOver {
+     #beerCalculator, #gameOver {
          font-size: 3rem;
          padding: 30px;
          font-weight: bold;
          margin-top: 15px;
          margin-left: -15px;
      }
-     #addPlayerBtn, #playerDelete, #beerDone {
+     #playerDelete, #beerDone, #takeTurn {
          font-size: 3rem;
-         padding: 30px;
+         padding: 20px;
+         font-weight: bold;
+         margin: 5px 10px 5px 0px;
+     }
+     #addPlayerBtn {
+         font-size: 3rem;
+         padding: 20px;
          font-weight: bold;
      }
      #alias {
@@ -665,14 +671,20 @@
      #gameDescription {
          font-size: 3.5rem;
      }
-     #beerCalculator, #takeTurn, #gameOver {
+     #beerCalculator, #gameOver {
          font-size: 1.5rem;
          padding: 15px;
          font-weight: bold;
          margin-top: 15px;
          margin-left: -15px;
      }
-     #addPlayerBtn, #playerDelete, #beerDone {
+     #playerDelete, #beerDone, #takeTurn {
+         font-size: 1.5rem;
+         padding: 15px;
+         font-weight: bold;
+         margin: 5px 10px 5px 0px;
+     }
+     #addPlayerBtn {
          font-size: 1.5rem;
          padding: 15px;
          font-weight: bold;
@@ -987,7 +999,7 @@
      color: #777;
  }
  
- #beerCalculator, #takeTurn, #beerDone, #addPlayerBtn {
+ #takeTurn, #beerDone, #beerCalculator, #addPlayerBtn {
      background-color: #3BB1F7;
      color: white;
  }
