@@ -28,7 +28,7 @@ $(document).ready(function() {
     // should choose a random pairing each time the turn is chosen
     function commonality() {
         var firstThings = ["Rocky", "Clint Eastwood", "Thomas Jefferson", "Donald Trump", "Armstrong", "Prince", "Lewis", "Sarah Palin", "Ben Franklin", "Alaska", "Cholera", "Jeb!", "All the President's Men"];
-        var secondThings = ["Muhammad Ali", "John Wayne", "John Adams", "George Washington", "Young", "Martin Luther King", "Clark", "Vietnam War", "Isaac Newton", "Russia", "Covered Wagons", "The 41st President", "Dick"];
+        var secondThings = ["Muhammad Ali", "John Wayne", "John Adams", "George Washington", "Young", "Martin Luther King", "Clark", "Vietnam War", "Thomas Edison", "Russia", "Covered Wagons", "The 41st President", "Dick"];
         var answers = ["Boxers", "Cowboys", "Died the same day", "Not their real hair", "Neil", "American Royalty", "Explorers", "John McCain", "Electricity", "Sarah Palin can see them from her house", "The Oregon Trail", "The Bush Family", "Movies About Watergate"];
         var number = Math.floor(Math.random() * 14);
         var firstThing = firstThings[number];

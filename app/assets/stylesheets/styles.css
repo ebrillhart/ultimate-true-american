@@ -5,13 +5,13 @@
      /* Landing Page */
      /****************/
      #homeHeader1 {
-         font-size: 15rem;
+         font-size: 17rem;
      }
      #homeHeader2 {
-         font-size: 7rem;
+         font-size: 8.5rem;
      }
      #homeSmall {
-         font-size: 5rem;
+         font-size: 6rem;
      }
      #howTo {
          margin-top: 700px;
@@ -28,7 +28,9 @@
      #howToButton {
          background-color: #FF6A68;
          color: white;
-         font-size: 2.5em;
+         font-size: 4.5rem;
+         margin-top: 50px;
+         padding: 20px;
      }
      #textBack {
          background-color: rgba(255, 255, 255, 0.5);
@@ -40,14 +42,14 @@
          vertical-align: middle;
      }
      #howToHeader {
-         font-size: 7.5rem;
+         font-size: 8.5rem;
          font-weight: bold;
      }
      .howToIcon {
          font-size: 6rem;
      }
      .howToText {
-         font-size: 3rem;
+         font-size: 3.5rem;
      }
      #copyright {
          font-size: 0.8rem;
@@ -56,11 +58,20 @@
      /* rules page */
      /**************/
      #rulesHeader {
-         font-size: 10rem;
+         font-size: 12rem;
          font-weight: bold;
      }
      #rulesHeaderSmall {
-         font-size: 4rem;
+         font-size: 4.5rem;
+     }
+     #rulesSummary {
+        font-size: 3.5rem;
+     }
+     .rulesSectionHead {
+        font-size: 5rem;
+     }
+     .rulesText {
+        font-size: 2.5rem;
      }
      /****************/
      /* profile page */
@@ -80,10 +91,11 @@
      .navbar-default {
          padding-top: 30px;
          padding-bottom: 30px;
-         font-size: 2rem;
+         font-size: 3rem;
+         width: 100%;
      }
      .navbar-default .navbar-brand {
-         font-size: 3rem;
+         font-size: 4rem;
      }
      #gamesCreator, #gamesPlayer {
          font-size: 4rem;
@@ -122,23 +134,35 @@
      /* Game Dashboard */
      /******************/
      #gameTitle, #playersHeader {
-         font-size: 5rem;
+         font-size: 7rem;
          font-weight: bold;
      }
+     #playersHeader {
+        margin-top: 50px;
+     }
      #gameDescription {
-         font-size: 3.5rem;
+         font-size: 5rem;
+     }
+     #playerCount {
+        font-size: 4rem;
      }
      #beerCalculator, #takeTurn, #gameOver {
-         font-size: 1.5rem;
-         padding: 15px;
+         font-size: 3rem;
+         padding: 30px;
          font-weight: bold;
          margin-top: 15px;
          margin-left: -15px;
      }
      #addPlayerBtn, #playerDelete, #beerDone {
-         font-size: 1.5rem;
-         padding: 15px;
+         font-size: 3rem;
+         padding: 30px;
          font-weight: bold;
+     }
+     #alias {
+        font-size: 5rem;
+     }
+     #consumed {
+        font-size: 4rem;
      }
      /******************/
      /* Turn Dashboard */
@@ -148,8 +172,8 @@
          font-weight: bold;
      }
      #commonalitiesBtn, #quoteBtn, #theCountBtn {
-         font-size: 3rem;
-         padding: 35px;
+         font-size: 4rem;
+         padding: 45px;
          font-weight: bold;
          margin-top: 40px;
          text-align: center;
@@ -164,20 +188,21 @@
      }
      #commonalityShow {
          font-weight: bold;
-         font-size: 3rem;
-         padding: 25px;
+         font-size: 3.5rem;
+         padding: 35px;
          margin-top: 40px;
          margin-bottom: 45px;
      }
      #commonalityDashboard {
          font-weight: bold;
-         font-size: 3rem;
-         padding: 25px;
+         font-size: 3.5rem;
+         padding: 35px;
          margin-top: 40px;
          margin-bottom: 60px;
      }
      #commonality1, #commonality2, #commonalityAnswer {
-         font-size: 3rem;
+         font-size: 4rem;
+         font-weight: bold;
      }
      /**************/
      /* Quote Page */
@@ -189,32 +214,33 @@
      }
      #quoteAnswer {
          font-weight: bold;
-         font-size: 3rem;
-         padding: 25px;
+         font-size: 3.5rem;
+         padding: 35px;
          margin-top: 40px;
          margin-bottom: 45px;
      }
      #quoteDashboard {
          font-weight: bold;
-         font-size: 3rem;
-         padding: 25px;
+         font-size: 3.5rem;
+         padding: 35px;
          margin-top: 40px;
          margin-bottom: 60px;
      }
      #firstHalf, #secondHalf {
-         font-size: 3rem;
+         font-size: 4rem;
+         font-weight: bold;
      }
      /******************/
      /* The Count Page */
      /******************/
      #countNumber {
-         font-size: 40rem;
-         margin-top: 350px;
+         font-size: 70rem;
+         margin-top: 300px;
      }
      #countDashboard {
          font-weight: bold;
-         font-size: 3rem;
-         padding: 25px;
+         font-size: 3.5rem;
+         padding: 35px;
          margin-top: 40px;
          margin-bottom: 60px;
      }
