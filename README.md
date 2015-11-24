@@ -4,9 +4,9 @@ An app built with Ruby on Rails that facilitates multiple users (the game's crea
 
 ###How-To
 ######1. Sign up for an account (you can use Facebook) in order to create games and access games that friends have added you to.
-######Add friends that you want to play the game with. Players are added by username, so make sure that they have an account in order to have access to the game dashboard.
-######Read the rules and follow or adapt them as your see fit. We've added three options for what to do during a turn, but feel free to come up with your own to make the game yours.
-######Set up your game space, gather your materials (read: booze), and get ready to party like a True American!
+######2. Add friends that you want to play the game with. Players are added by username, so make sure that they have an account in order to have access to the game dashboard.
+######3. Read the rules and follow or adapt them as your see fit. We've added three options for what to do during a turn, but feel free to come up with your own to make the game yours.
+######4. Set up your game space, gather your materials (read: booze), and get ready to party like a True American!
 
 ###Technologies Used:
 ######Ruby on Rails
