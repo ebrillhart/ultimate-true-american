@@ -4,6 +4,12 @@
      /****************/
      /* Landing Page */
      /****************/
+     html, body {
+         width: 100%;
+         margin: 0px;
+         padding: 0px;
+         overflow-x: hidden;
+     }
      #homeHeader1 {
          font-size: 17rem;
          text-align: center;
@@ -69,13 +75,13 @@
          font-size: 4.5rem;
      }
      #rulesSummary {
-        font-size: 3.5rem;
+         font-size: 3.5rem;
      }
      .rulesSectionHead {
-        font-size: 5rem;
+         font-size: 5rem;
      }
      .rulesText {
-        font-size: 2.5rem;
+         font-size: 2.5rem;
      }
      /****************/
      /* profile page */
@@ -142,13 +148,13 @@
          font-weight: bold;
      }
      #playersHeader {
-        margin-top: 50px;
+         margin-top: 50px;
      }
      #gameDescription {
          font-size: 5rem;
      }
      #playerCount {
-        font-size: 4rem;
+         font-size: 4rem;
      }
      #beerCalculator, #takeTurn, #gameOver {
          font-size: 3rem;
@@ -163,10 +169,10 @@
          font-weight: bold;
      }
      #alias {
-        font-size: 5rem;
+         font-size: 5rem;
      }
      #consumed {
-        font-size: 4rem;
+         font-size: 4rem;
      }
      /******************/
      /* Turn Dashboard */
