@@ -5,18 +5,15 @@ class SessionsController < ApplicationController
   end
 
   def create
-  	# method to log in user
-    # calls authentication and defines @user
+  # method to log in user
+  # calls authentication and defines @user
   user = User.authenticate login_params['email'], login_params['password']
   puts login_params['email']
   puts login_params['password']
     if user
-   
       session[:user_id] = user.id
       redirect_to profile_path
-    else
-   
-      
+    else 
       redirect_to root_path
     end
 end
