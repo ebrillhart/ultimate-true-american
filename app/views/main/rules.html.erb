@@ -22,18 +22,22 @@
 			<!-- castle explanation -->
 			<h2 class="rulesSectionHead">The Castle</h2>
 				<p class="rulesText">The Castle is made up of one bottle of liquor and many cans of beer (6 cans per player). The liquor is the King and sits in the middle of the Castle. The cans of beer are the Pawns and the Soldiers of the Secret Order. The Pawns are lined up in four lines radiating outward from the King. These lines of Pawns also signify the barriers between each zone. The game ends when all of the Pawns have been removed and a player drinks from the King.</p>
-			<!-- zones information -->
-			<h2 class="rulesSectionHead">The Zones</h2>
-				<p class="rulesText">There are four zones, each with five spaces where a player can stand. The center space in each zone is the only space where the Pawns can be taken and thus it is the closest space to the Castle. There are a total of four of these spaces. The spaces at the beginning and end of the zones are the farthest away from the Castle.</p>
 			<!-- set up instructions -->
 			<h2 class="rulesSectionHead">Setup</h2>
+				<p class="rulesText">There are four zones, each with five spaces where a player can stand. The center space in each zone is the only space where the Pawns can be taken and thus it is the closest space to the Castle. There are a total of four of these spaces. The spaces at the beginning and end of the zones are the farthest away from the Castle.</p>
+				<!-- diagram of suggested setup arrangement -->
+				<div class="row" id="setupImg">
+		 			<%= image_tag("true_american_canvas.png", class: "img-responsive center-block")%>
+		 			<div class="col-xs-10 col-xs-offset-1">
+		 				<p id="diagramText">One possible arrangement. The pink circle in the center is the castle with the king, and the white, grey, and red shapes are the furniture or other objects that players would move clockwise around.</p>
+		 			</div>
+		 		</div>	
 				<p class="rulesText">Before the game starts, determine how many beers you need (you can use the handy beer calculator on the game dashboard once you've added all your players!) and set up the Castle with those beers as the pawns. Using the lines of Pawns as barriers between the zones, designate each zone, making sure to have five spaces in each zone as described above.</p> 
 				<p class="rulesText">When adding players on the player dashboard, you have the option to give players aliases. Preferably aliases are names of historic or popular figures from American history.</p>
+			
 			<!-- how to start the game -->
 			<h2 class="rulesSectionHead">Starting the Game</h2>
 				<p class="rulesText">After setup is complete, players may have a shotgun contest to determine who has the first turn. If nobody wants to shotgun, play rock-paper-scissors instead. To start the game, the winner of the contest yells "One, two, three, JFK!", to which the other players respond "FDR!", grab a Pawn from the Castle, and move to any space in the game area.</p>
-				<br></br>
-		 	<%= image_tag("true_american_canvas.png", class: "img-responsive center-block")%>
     	</div>
 		<div class="col-xs-12 col-md-6">
 			<!-- game play info -->

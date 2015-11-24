@@ -87,6 +87,9 @@
      .rulesText {
          font-size: 2.5rem;
      }
+     #diagramText {
+         font-size: 2rem;
+     }
      /****************/
      /* profile page */
      /****************/
@@ -380,6 +383,9 @@
      .rulesText {
          font-size: 2.5rem;
      }
+     #diagramText {
+         font-size: 2rem;
+     }
      /****************/
      /* profile page */
      /****************/
@@ -661,6 +667,9 @@
      }
      .rulesText {
          font-size: 1.75rem;
+     }
+     #diagramText {
+         font-size: 1.5rem;
      }
      /****************/
      /* profile page */
@@ -974,6 +983,15 @@
  .rulesSectionHead {
      color: #FF6A68;
      font-weight: bold;
+ }
+ 
+ #setupImg {
+     margin-top: 20px;
+     margin-bottom: 30px;
+ }
+ 
+ #diagramText {
+     color: #777;
  }
  /****************/
  /* Profile Page */
