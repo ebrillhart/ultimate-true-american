@@ -1,4 +1,7 @@
-<!-- form that allows user/game creator to add game title, optional description, # of players, and user names of up to 10 players -->
+<!-- ********************************************** -->
+<!-- form that allows the user to create a new game -->
+<!-- user inputs game title and a description -->
+<!-- ********************************************** -->
 <div class="container">
 	<div class="row">
 		<div class="col-xs-8 col-xs-offset-2">
@@ -6,11 +9,15 @@
 		</div>	
 	</div>
 	<div class="row">
+		<!-- new game form -->
 		<%= bootstrap_form_for @game, url: game_index_path do |f| %>
+			<!-- input game title -->
 		  	<%= f.text_field :title %>
+		  	<!-- input game description -->
 		  	<%= f.text_field :description %>
-
+		  	<!-- create game button -->
 		  	<%= f.primary "Create Game", id: "createGameBtn" %>
-		<% end %>	
+		<% end %>
+		<!-- end of form -->
 	</div>
 </div>

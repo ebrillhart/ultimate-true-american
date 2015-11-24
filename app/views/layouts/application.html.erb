@@ -2,9 +2,11 @@
 <html>
 <head>
   <title>Ultimate True American</title>
-  <!-- Latest compiled and minified CSS & JS -->
+  <!-- font awesome -->
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- google fonts -->
   <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,300,600' rel='stylesheet' type='text/css'>
+  <!-- bootstrap CSS -->
   <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -82,13 +84,16 @@
 
 	<%= yield %>
 
+<!-- "copyright" info -->
 <div class-"container hidden-xs hidden-sm" id="copyrightDiv">
   <div class="row">
     <h6 id="copyright">&copy; Copyright 2015 YET Group. All rights reserved. Not associated in any capacity with FOX Broadcasting Network.</h6> 
   </div>
 </div> 
+<!-- script tags -->
 <script src="//code.jquery.com/jquery.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+<!-- end script tags -->
 </body>
 </html>

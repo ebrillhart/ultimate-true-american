@@ -1,16 +1,17 @@
-<!-- dashboard of current game with players/aliases, and number of beers they've finished along with a button for taking a turn AND a beer button, delete button for players -->
+<!-- *************************************************************************************** -->
+<!-- Game dashboard with game info, beer calculator, and option of adding players -->
+<!-- when player is added, buttons to remove player, take a turn, and "finish a beer" appear -->
+<!-- *************************************************************************************** -->
 <div class="container">	
   <div class="row">
     <div class="col-xs-12 col-md-6">
       <div class="row">
+      <!-- Game info: title, description, number of players -->
     	 <h1 id="gameTitle"><%= @game.title %></h1>
     	 <h2 id="gameDescription"><%= @game.description %></h2>	
        <h2 id="playerCount">Number of Players: <span id="noOfPlayers"><%= @game.player.count %></span></h2>
       </div>
       <div class="row">
-        <div class="col-xs-12 col-md-12">
-          
-        </div>
         <div class="col-xs-12 col-md-12">
           <!-- beer calc trigger -->
           <button class="btn" id="beerCalculator"><a data-toggle="modal" href="#beerCalcModal">We Need How Many Beers?!?</a></button>
@@ -36,11 +37,14 @@
       </div><!-- /.modal -->
     </div>
     <div class="col-xs-12 col-md-6">
+    <!-- players column/section (on mobile) -->
     <h1 class="text-center" id="playersHeader">Players</h1>
+    <!-- DB display function -->
   	<% @game.player.each do |player| %>
     	<div class="well"> 
         <div class="row">
           <div class="col-xs-6">
+            <!-- player info: alias, username, number of beers consumed -->
             <h2 id="alias"><%= player.alias %> <small>(<%= player.username %>)</small></h2>
             <p id="consumed"><%= player.beers %> beers consumed</p>
           </div>
@@ -67,7 +71,7 @@
       </div>
     </div>
   </div>
-	<!-- sign up modal -->
+	<!-- add player modal -->
   <div class="modal fade" id="addPlayerModal">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -76,12 +80,15 @@
           <h2 class="modal-title">Add Player</h2>
         </div>
         <div class="modal-body">
+          <!-- form for new player -->
           <%= bootstrap_form_for :player, url: "/players" do |f| %>
           <%= bootstrap_form_for :player, url: game_path do |f| %>
+            <!-- add player username -->
 				    <%= f.text_field :username %>
+            <!-- add an optional alias -->
             <%= f.text_field :alias %>
             <%= hidden_field_tag(:game_id, @game.id) %>
-
+          <!-- add player button -->
 				  <%= f.primary 'Add', id:"playerAdd" %>
          <% end %> 
 		     <% end %>

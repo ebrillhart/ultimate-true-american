@@ -1,11 +1,15 @@
-<!-- random number generator -->
+<!-- *************************************************** -->
+<!-- random number generator for "the count" turn option -->
+<!-- *************************************************** -->
 <div class="container">
 	<div class="row">
 		<div class="center-block" id="theCount">
+			<!-- random number 1-5 generated with jQuery -->
 			<h1 class="text-center" id="countNumber"></h1>	
 		</div>
 	</div>
 	<div class="row">
+		<!-- takes user back to the game dashboard -->
 		<button class="btn center-block" id="countDashboard"><a href="/game/<%= session[:game_id] %>">Back to Dashboard</a></button>
 	</div>	
 </div>

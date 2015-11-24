@@ -1,4 +1,8 @@
+<!-- ************************************************* -->
+<!-- form for user to sign up locally or with Facebook -->
+<!-- ************************************************* -->
 <%= bootstrap_form_for :user, url: signup_path do |f| %>
+	<!-- local auth sign-up -->
   <%= f.email_field :email %>
   <%= f.text_field :username %>
   <%= f.password_field :password %>
@@ -10,6 +14,7 @@
 <div id="signUpOr">
 <h4 class="or">or</h4>
 </div>
+<!-- facebook sign up -->
 <div id="fbButtonSignUp">
 <%= link_to "Sign Up with Facebook", "/auth/facebook", class: "btn formButton" %>
 </div>
