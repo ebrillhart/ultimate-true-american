@@ -19,9 +19,7 @@ An app built with Ruby on Rails that facilitates multiple users (the game's crea
 ######Google Fonts
 
 ###Wireframes:
-######
-######
-######
+https://docs.google.com/document/d/1igAJH_4E1MsN6-VkXdNKa4nxqb4hu4yP57LuOCOuaQA/edit?usp=sharing
 
 ###ERD:
 https://drive.google.com/file/d/0BwTLtk98IjeBMzI3VHp3UUNvbGVveE11dFNsOGotTjJWMlhJ/view?usp=sharing
