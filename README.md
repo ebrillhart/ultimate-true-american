@@ -24,7 +24,7 @@ An app built with Ruby on Rails that facilitates multiple users (the game's crea
 ######
 
 ###ERD:
-https://www.draw.io/?state=%7B%22ids%22:%5B%220BwTLtk98IjeBMzI3VHp3UUNvbGVveE11dFNsOGotTjJWMlhJ%22%5D,%22action%22:%22open%22,%22userId%22:%22109745962548937064264%22%7D#G0BwTLtk98IjeBMzI3VHp3UUNvbGVveE11dFNsOGotTjJWMlhJ
+https://drive.google.com/file/d/0BwTLtk98IjeBMzI3VHp3UUNvbGVveE11dFNsOGotTjJWMlhJ/view?usp=sharing
 
 ###User Stories:
 ######1. One user of True American is a college student who is a big fan of the show New Girl. She always enjoys the episode of new girl where True American is played and has always wanted to find a workable version of the rules and some sort of structure.  She comes across Ultimate True American while looking for a game to play with her college roommate.  She wants a game that is easy to prep for, self explanatory and available on her mobile phone.
