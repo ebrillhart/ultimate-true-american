@@ -226,8 +226,8 @@
          font-weight: bold;
      }
      .devName {
-        font-size: 4.5rem;
-        margin-top: 15px;
+         font-size: 4.5rem;
+         margin-top: 15px;
      }
      #theDevelopers, #theGame {
          font-size: 6rem;
@@ -237,18 +237,261 @@
          font-size: 3rem;
      }
      #sourceCode {
-        font-weight: bold;
+         font-weight: bold;
      }
      .devIcon, #sourceCodeIcon {
-        word-spacing: 30px;
-        font-size: 5rem;
-        margin-bottom: 40px;
+         word-spacing: 30px;
+         font-size: 5rem;
+         margin-bottom: 40px;
      }
  }
  /* iPads (portrait and landscape) ----------- */
  
  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
      /* Styles */
+     /****************/
+     /* Landing Page */
+     /****************/
+     #homeHeader1 {
+         font-size: 15rem;
+     }
+     #homeHeader2 {
+         font-size: 7rem;
+     }
+     #homeSmall {
+         font-size: 5rem;
+     }
+     #howTo {
+         margin-top: 700px;
+         margin-bottom: 30px;
+     }
+     #homepageDiv {
+         height: 700px;
+         margin-top: -20px;
+         padding-top: 450px;
+     }
+     #buttonsDiv {
+         margin-top: 175px;
+     }
+     #howToButton {
+         background-color: #FF6A68;
+         color: white;
+         font-size: 2.5em;
+     }
+     #textBack {
+         background-color: rgba(255, 255, 255, 0.5);
+         width: 60%;
+         padding: 30px;
+         border: 1px solid white;
+     }
+     #homepageDiv h1 {
+         vertical-align: middle;
+     }
+     #howToHeader {
+         font-size: 7.5rem;
+         font-weight: bold;
+     }
+     .howToIcon {
+         font-size: 6rem;
+     }
+     .howToText {
+         font-size: 3rem;
+     }
+     #copyright {
+         font-size: 0.8rem;
+     }
+     /**************/
+     /* rules page */
+     /**************/
+     #rulesHeader {
+         font-size: 10rem;
+         font-weight: bold;
+     }
+     #rulesHeaderSmall {
+         font-size: 4rem;
+     }
+     /****************/
+     /* profile page */
+     /****************/
+     #profileHeader {
+         font-size: 8rem;
+         margin-top: 60px;
+         color: #FF6A68;
+         font-weight: bold;
+     }
+     #yourGames {
+         margin-top: 150px;
+         font-size: 4.5em;
+         color: #FF6A68;
+         font-weight: bold;
+     }
+     .navbar-default {
+         padding-top: 30px;
+         padding-bottom: 30px;
+         font-size: 2rem;
+     }
+     .navbar-default .navbar-brand {
+         font-size: 3rem;
+     }
+     #gamesCreator, #gamesPlayer {
+         font-size: 4rem;
+         font-weight: bold;
+     }
+     #newGameBtn {
+         margin-top: 75px;
+         padding-top: 60px;
+         padding-bottom: 60px;
+         font-size: 3rem;
+         font-weight: bold;
+         background-color: #3BB1F7;
+         color: white;
+     }
+     /************/
+     /* New Game */
+     /************/
+     #createGameBtn {
+         font-size: 3rem;
+         padding: 15px;
+         margin-top: 30px;
+     }
+     #newGameHeader {
+         font-size: 8rem;
+         font-weight: bold;
+     }
+     label {
+         font-size: 4rem;
+         font-weight: bold;
+     }
+     .form-control {
+         font-size: 3rem;
+         height: 60px;
+     }
+     /******************/
+     /* Game Dashboard */
+     /******************/
+     #gameTitle, #playersHeader {
+         font-size: 5rem;
+         font-weight: bold;
+     }
+     #gameDescription {
+         font-size: 3.5rem;
+     }
+     #beerCalculator, #takeTurn, #gameOver {
+         font-size: 1.5rem;
+         padding: 15px;
+         font-weight: bold;
+         margin-top: 15px;
+         margin-left: -15px;
+     }
+     #addPlayerBtn, #playerDelete, #beerDone {
+         font-size: 1.5rem;
+         padding: 15px;
+         font-weight: bold;
+     }
+     /******************/
+     /* Turn Dashboard */
+     /******************/
+     #turnHeader {
+         font-size: 9rem;
+         font-weight: bold;
+     }
+     #commonalitiesBtn, #quoteBtn, #theCountBtn {
+         font-size: 3rem;
+         padding: 35px;
+         font-weight: bold;
+         margin-top: 40px;
+         text-align: center;
+     }
+     /********************/
+     /* Commonality Page */
+     /********************/
+     #commonalityHeader {
+         font-size: 6rem;
+         font-weight: bold;
+         margin-bottom: 70px;
+     }
+     #commonalityShow {
+         font-weight: bold;
+         font-size: 3rem;
+         padding: 25px;
+         margin-top: 40px;
+         margin-bottom: 45px;
+     }
+     #commonalityDashboard {
+         font-weight: bold;
+         font-size: 3rem;
+         padding: 25px;
+         margin-top: 40px;
+         margin-bottom: 60px;
+     }
+     #commonality1, #commonality2, #commonalityAnswer {
+         font-size: 3rem;
+     }
+     /**************/
+     /* Quote Page */
+     /**************/
+     #quoteHeader {
+         font-size: 8rem;
+         font-weight: bold;
+         margin-bottom: 70px;
+     }
+     #quoteAnswer {
+         font-weight: bold;
+         font-size: 3rem;
+         padding: 25px;
+         margin-top: 40px;
+         margin-bottom: 45px;
+     }
+     #quoteDashboard {
+         font-weight: bold;
+         font-size: 3rem;
+         padding: 25px;
+         margin-top: 40px;
+         margin-bottom: 60px;
+     }
+     #firstHalf, #secondHalf {
+         font-size: 3rem;
+     }
+     /******************/
+     /* The Count Page */
+     /******************/
+     #countNumber {
+         font-size: 40rem;
+         margin-top: 350px;
+     }
+     #countDashboard {
+         font-weight: bold;
+         font-size: 3rem;
+         padding: 25px;
+         margin-top: 40px;
+         margin-bottom: 60px;
+     }
+     /**************/
+     /* About Page */
+     /**************/
+     #aboutHeader {
+         font-size: 13rem;
+         font-weight: bold;
+     }
+     .devName {
+         font-size: 4.5rem;
+         margin-top: 15px;
+     }
+     #theDevelopers, #theGame {
+         font-size: 6rem;
+         font-weight: bold;
+     }
+     .devText, #gameAboutText, #sourceCode {
+         font-size: 3rem;
+     }
+     #sourceCode {
+         font-weight: bold;
+     }
+     .devIcon, #sourceCodeIcon {
+         word-spacing: 30px;
+         font-size: 5rem;
+         margin-bottom: 40px;
+     }
  }
  /************************************/
  /************************************/
@@ -484,32 +727,31 @@
          font-weight: bold;
      }
      .devName {
-        font-size: 5rem;
-        margin-top: 25px;
-        font-weight: bold;
+         font-size: 5rem;
+         margin-top: 25px;
+         font-weight: bold;
      }
      #theDevelopers, #theGame {
          font-size: 7rem;
          font-weight: bold;
      }
-
      #theDevelopers {
-        margin-bottom: 25px;
+         margin-bottom: 25px;
      }
      .devText, #gameAboutText, #sourceCode {
          font-size: 2rem;
      }
      #sourceCode {
-        font-weight: bold;
-        font-size: 3rem;
+         font-weight: bold;
+         font-size: 3rem;
      }
      .devIcon {
-        word-spacing: 30px;
-        font-size: 4rem;
-        margin-bottom: 40px;
+         word-spacing: 30px;
+         font-size: 4rem;
+         margin-bottom: 40px;
      }
      #sourceCodeIcon {
-        font-size: 6rem;
+         font-size: 6rem;
      }
  }
  /*******************/
@@ -811,7 +1053,7 @@
  }
  
  #theDevelopers, #theGame, #sourceCode, .devName {
-    color: #3BB1F7;
+     color: #3BB1F7;
  }
  
  .devText, #gameAboutText {
