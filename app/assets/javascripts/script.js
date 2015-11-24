@@ -1,6 +1,7 @@
 $(document).ready(function() {
     // function that runs on the game show page to calculate the beers needed
     // based on the number of players added
+    
     function beerCalc() {
         var players = $('#noOfPlayers').html();
         // each player needs 6 beers for the game
