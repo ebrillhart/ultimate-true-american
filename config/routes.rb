@@ -35,6 +35,7 @@ Rails.application.routes.draw do
     # config/application.rb
   # config.exceptions_app = self.routes
 
+
   get "/404" => "errors#not_found"
   get "/500" => "errors#internal_server_error"
 
