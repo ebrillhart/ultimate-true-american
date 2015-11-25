@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
   #auth stuff
   before_action :current_user
 
+# checks if user is authenticated
   def is_authenticated?
     unless @current_user
       redirect_to root_path
