@@ -9,6 +9,7 @@ before_action :is_authenticated?
   def create
     # creates the game/adds to database, no view
     @game = Game.create game_params
+    # creates session for current users, current game
     @game.update_columns(user_id: session[:user_id])
     puts session[:game_id]
     # redirect_to game_index_path
@@ -26,17 +27,17 @@ before_action :is_authenticated?
   def show
     @game = Game.find(params[:id])
     session[:game_id] = @game.id
-    puts session[:user_id]
+
   end
 
   # def update
   # end
 
-  def destroy
-    # allows game to be deleted
-    Game.find(params[:id]).delete
-    redirect_to profile_path
-  end
+  # def destroy
+  #   # allows game to be deleted
+  #   Game.find(params[:id]).delete
+  #   redirect_to profile_path
+  # end
 
   private
 

@@ -7,6 +7,7 @@ before_action :is_authenticated?
     # same view as create game view, allows user to add player usernames to game
     player = Player.create player_params
     player.update_columns(game_id: params[:game_id])
+    # sets beer column at zero
     player.update_columns(beers: '0')
     redirect_to "/game/"+ params[:game_id]
   end
@@ -27,7 +28,7 @@ before_action :is_authenticated?
   end
 
   def destroy
-    # delete a player from current game
+    # delete a player from current game using game session and redirects to dash
     Player.find(params[:id]).delete
     redirect_to "/game/"+ session[:game_id].to_s
   end
